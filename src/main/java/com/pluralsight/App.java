@@ -19,20 +19,30 @@ public class App {
 
         // 2. Filter characters with mass > 80
         System.out.println("\n=== Characters with Mass > 80 ===");
+        //create a new list to hold the characters that are mass > 80
         ArrayList<Character> filtered = new ArrayList<Character>();
+        //loop over our characters and ask if they have a mass > 80
         for (Character c : characters) {
+            //where we are asking the question
             if (c.getMass() > 80) {
+                //we add them to the new list
                 filtered.add(c);
-                System.out.println(c.getName() + " (" + c.getMass() + ")");
             }
+        }
+        //print the new list with a loop
+        for (Character c : characters) {
+            System.out.println(c.getName() + " (" + c.getMass() + ")");
         }
 
         // 3. Create a list of just names
         System.out.println("\n=== Character Names ===");
+        //create a new list to hold just the names of characters
         ArrayList<String> names = new ArrayList<String>();
+        //loop over my characters and get just the name and add it to the new list
         for (Character c : characters) {
             names.add(c.getName());
         }
+        //print out just the names by looping over the new list
         for (String name : names) {
             System.out.println(name);
         }
