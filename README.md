@@ -58,14 +58,6 @@ This branch shows the **modern Java approach** that is concise, expressive, and 
 
 ---
 
-## 🗂 Project Structure  
-src/
-└── com/pluralsight/
-    ├── App.java        // Application logic
-    └── Character.java  // Data model
-    
----
-
 ## 🎯 Key Takeaways  
 - Functional programming keeps code cleaner  
 - Streams reduce repetitive boilerplate loops  
